@@ -11,8 +11,8 @@
     <groupId>fr.publicis.sapient</groupId>
     <artifactId>Mower-5000-XR-TURBO</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Mowe 5000-XR TURBO</name>
-    <description>Mowe 5000-XR TURBO</description>
+    <name>Mower 5000-XR TURBO</name>
+    <description>Mower 5000-XR TURBO</description>
     <properties>
         <java.version>17</java.version>
     </properties>

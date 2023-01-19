@@ -1,13 +1,13 @@
 package fr.publicis.sapient.mower5000xrturbo;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import fr.publicis.sapient.mower5000xrturbo.game.FileReader;
 
-@SpringBootApplication
+import java.io.IOException;
+
 public class Mowe5000XrTurboApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Mowe5000XrTurboApplication.class, args);
-	}
+    public static void main(String[] args) throws IOException {
+        new FileReader().read("src/main/resources/input");
+    }
 
 }

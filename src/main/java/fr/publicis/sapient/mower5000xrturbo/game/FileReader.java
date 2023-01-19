@@ -5,15 +5,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 
-public class MowerFileReader {
+public class FileReader {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(MowerFileReader.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(FileReader.class);
 
-    public void read() throws IOException {
-        try (BufferedReader reader = new BufferedReader(new FileReader("src/main/resources/input"))) {
+    public void read(String inputFilePath) throws IOException {
+        try (BufferedReader reader = new BufferedReader(new java.io.FileReader(inputFilePath))) {
             String line = reader.readLine();
             String[] gardenLength = line.split(" ");
             if (gardenLength.length != 2) {
